@@ -1,4 +1,4 @@
-# egg-egg-grpc-client-ts-plus
+# egg-grpc-client-ts-plus
 
 > TypeScript version of egg grpc client plugin.
 

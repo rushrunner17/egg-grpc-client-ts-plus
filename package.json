@@ -1,9 +1,12 @@
 {
-  "name": "egg-egg-grpc-client-ts-plus",
-  "version": "1.0.2",
+  "name": "egg-grpc-client-ts-plus",
+  "_from": "egg-grpc-client-ts-plus",
+  "_id": "egg-grpc-client-ts-plus@1.0.8",
+  "version": "1.0.8",
   "description": "",
+  "_location": "/egg-grpc-client-ts-plus",
   "eggPlugin": {
-    "name": "no"
+    "name": "grpcClientTsPlus"
   },
   "keywords": [
     "egg",
@@ -47,12 +50,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rushrunner17/egg-egg-grpc-client-ts-plus.git"
+    "url": "git+https://github.com/rushrunner17/egg-grpc-client-ts-plus.git"
   },
   "bugs": {
     "url": "https://github.com/eggjs/egg/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-egg-grpc-client-ts-plus#readme",
+  "homepage": "https://github.com/eggjs/egg-grpc-client-ts-plus#readme",
   "author": "",
   "license": "MIT"
 }
