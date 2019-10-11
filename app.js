@@ -58,8 +58,8 @@ async function addServiceClient(relevantParent, tier, tierName, clientConfig) {
     const address = `${clientConfig.host}:${clientConfig.port}`;
     const credentials = grpc.credentials.createInsecure();
     const clientOptions = {
-        'grpc.max_send_message_length': -1  /* clientConfig.maxSendMessageLength */,
-        'grpc.max_receive_message_length': 4 * 1024 * 1024  /* clientConfig.maxReceiveMessageLength */,
+        'grpc.max_send_message_length': clientConfig.maxSendMessageLength || -1,
+        'grpc.max_receive_message_length': clientConfig.maxReceiveMessageLength || 4 * 1024 * 1024,
     }
 
     const client = new ServiceClient(address, credentials, clientOptions);
