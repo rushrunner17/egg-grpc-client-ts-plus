@@ -92,7 +92,7 @@ async function addServiceClient(relevantParent, tier, tierName, clientConfig) {
         options = {};
       }
       console.log('options = =============== >>> ', options);
-      method.call(
+      const res = method.call(
         client,
         arg,
         Object.assign({}, options, {
@@ -115,6 +115,9 @@ async function addServiceClient(relevantParent, tier, tierName, clientConfig) {
           callback(err, res);
         }
       );
+      if (res instanceof require('stream')) {
+        callback(undefined, res);
+      }
     });
   }
 }
